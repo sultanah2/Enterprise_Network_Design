@@ -1,50 +1,134 @@
-# Enterprise_Network_Design
+#  Enterprise Network Design
 
 ## Overview
-This project demonstrates the design and implementation of an enterprise network using Cisco Packet Tracer. It implements advanced network architectures including Inter-VLAN routing, dynamic RIP routing, and security Access Control Lists (ACLs).
 
-## Features
-- VLAN Configuration and Segmentation (IT Dept & HR Dept)
-- Router-on-a-Stick (ROAS) Inter-VLAN Routing
-- Dynamic RIPv2 Routing Configuration
-- Standard Access Control Lists (ACL) for Traffic Restriction
+This project presents the design and implementation of a secure and scalable enterprise network using Cisco Packet Tracer. The network was developed for a company environment with multiple departments, focusing on efficient communication, logical segmentation, and secure access between different areas of the organization.
 
-## Network Topology
-
-!Network Topology
-
-## IP Addressing Summary
-
-| Device Name | Interface | IP Address | Subnet Mask |
-| :--- | :--- | :--- | :--- |
-| **Router1** | Fa0/0.10 (VLAN 10) | 192.168.10.1 | 255.255.255.0 |
-| **Router1** | Fa0/0.30 (VLAN 30) | 192.168.30.1 | 255.255.255.0 |
-| **Router1** | Se2/0 | 10.0.0.1 | 255.255.255.252 |
-| **Router1** | Se3/0 | 11.0.0.2 | 255.255.255.252 |
-| **Router2** | Fa0/0 | 192.168.20.1 | 255.255.255.0 |
-| **Router3** | Fa0/0 | 192.168.40.1 | 255.255.255.0 |
-| **Hosts (PCs)** | VLAN 10, 20, 30, 40 | 192.168.x.x Subnets | 255.255.255.0 |
+The project demonstrates practical networking concepts including routing, switching, VLAN implementation, IP addressing, and access control while following standard enterprise network design principles.
 
 ---
 
-## Verification and Live Diagnostics
+## Project Objectives
 
-### 1. Routing Table Diagnostics (show ip route)
-This command displays the router's routing table, showing directly connected networks (C) and networks learned via the RIP routing protocol (R):
-```text
-C    192.168.10.0/24 is directly connected, FastEthernet0/0.10
-R    192.168.20.0/24 [120/1] via 10.0.0.2, Serial2/0
-C    192.168.30.0/24 is directly connected, FastEthernet0/0.30
-R    192.168.40.0/24 [120/1] via 11.0.0.1, Serial3/0
+- Design a scalable enterprise network.
+- Connect multiple departments through a structured topology.
+- Implement logical network segmentation using VLANs.
+- Enable communication between different network segments.
+- Improve network organization and manageability.
+- Apply security policies to control network access.
+- Demonstrate practical Cisco networking skills using Packet Tracer.
 
-### 2. Security Enforcement (ACL Ping Proof)
-Verification that the Access Control List successfully blocks restricted host traffic while maintaining secure segmentation:
-نسخ
-
-
-C:\> ping 192.168.40.10
-Pinging 192.168.40.10 with 32 bytes of data:
-Reply from 11.0.0.1: Destination host unreachable.
+---
 
-## Tools
- * Cisco Packet Tracer
+# Network Topology
+
+![Enterprise Network Topology](image.png)
+
+---
+
+## Project Features
+
+- Enterprise network architecture
+- Multi-router topology
+- Multiple Cisco switches
+- Department-based VLAN segmentation
+- IPv4 addressing plan
+- Inter-network communication
+- Access Control Lists (ACL)
+- Cisco IOS CLI configuration
+- End-to-end connectivity testing
+
+---
+
+## Technologies Used
+
+- Cisco Packet Tracer
+- Cisco Routers
+- Cisco Switches
+- IPv4 Addressing
+- VLANs
+- Static & Dynamic Routing
+- Access Control Lists (ACL)
+- Cisco IOS CLI
+
+---
+
+## Network Design Highlights
+
+The network was designed following enterprise networking principles by separating departments into different logical segments while maintaining secure communication between authorized devices.
+
+The implementation includes:
+
+- Structured IP addressing
+- Router and switch configuration
+- VLAN implementation
+- Routing configuration
+- Network segmentation
+- Access control policies
+- Connectivity verification
+- End-device communication testing
+
+---
+
+## Skills Demonstrated
+
+- Enterprise Network Design
+- Network Planning
+- IPv4 Address Planning
+- Cisco Router Configuration
+- Cisco Switch Configuration
+- VLAN Deployment
+- Routing Configuration
+- Network Security Fundamentals
+- ACL Configuration
+- Network Troubleshooting
+- Cisco IOS Command Line
+
+---
+
+## Learning Outcomes
+
+Through this project, the following practical networking skills were developed:
+
+- Designing enterprise-scale network topologies.
+- Configuring Cisco routers and switches.
+- Building segmented networks using VLANs.
+- Implementing routing between multiple networks.
+- Applying basic security using Access Control Lists.
+- Testing and troubleshooting network connectivity.
+- Documenting and organizing networking projects professionally.
+
+---
+
+## Future Improvements
+
+Possible future enhancements include:
+
+- OSPF Multi-Area Routing
+- DHCP Server Integration
+- NAT/PAT Configuration
+- IPv6 Deployment
+- SSH Remote Management
+- Port Security
+- EtherChannel
+- High Availability (HSRP)
+- Network Monitoring
+
+---
+
+## Repository Contents
+
+- Cisco Packet Tracer project (.pkt)
+- Network topology diagram
+- Project documentation
+- Configuration files
+
+---
+
+## Author
+
+Sultanah Aljohani
+
+Computer Engineering Student
+
+Interested in Networking, Cloud Computing, and Enterprise Infrastructure.
